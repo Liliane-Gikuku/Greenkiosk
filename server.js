@@ -64,7 +64,7 @@ var server = http.createServer(function (req, res) {   // create web server
   }
   else if (req.url == "/products/fruits") {
     // res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.write(JSON.stringify(GreensKiosk.getItems('/products/fruits')));
+    res.write(JSON.stringify(getfruits));
     res.end();
    
   }
